@@ -1,0 +1,52 @@
+{
+  "iterations": 20,
+  "units": "milliseconds",
+  "workloads": {
+    "artificial_io_120ms": {
+      "sequential_cold": {
+        "median_ms": 250.221,
+        "p95_ms": 253.492,
+        "executed_features_per_query": 9.0,
+        "cache_hit_rate": 0.0,
+        "speedup_vs_sequential_cold": 1.0
+      },
+      "concurrent_cold": {
+        "median_ms": 125.949,
+        "p95_ms": 126.915,
+        "executed_features_per_query": 9.0,
+        "cache_hit_rate": 0.0,
+        "speedup_vs_sequential_cold": 1.99
+      },
+      "concurrent_warm": {
+        "median_ms": 0.244,
+        "p95_ms": 0.295,
+        "executed_features_per_query": 0.0,
+        "cache_hit_rate": 1.0,
+        "speedup_vs_sequential_cold": 1025.5
+      }
+    },
+    "local_sqlite_no_artificial_io": {
+      "sequential_cold": {
+        "median_ms": 7.04,
+        "p95_ms": 9.402,
+        "executed_features_per_query": 9.0,
+        "cache_hit_rate": 0.0,
+        "speedup_vs_sequential_cold": 1.0
+      },
+      "concurrent_cold": {
+        "median_ms": 5.008,
+        "p95_ms": 5.714,
+        "executed_features_per_query": 9.0,
+        "cache_hit_rate": 0.0,
+        "speedup_vs_sequential_cold": 1.41
+      },
+      "concurrent_warm": {
+        "median_ms": 0.124,
+        "p95_ms": 0.18,
+        "executed_features_per_query": 0.0,
+        "cache_hit_rate": 1.0,
+        "speedup_vs_sequential_cold": 56.77
+      }
+    }
+  }
+}

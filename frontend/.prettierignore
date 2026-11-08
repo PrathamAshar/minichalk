@@ -1,0 +1,4 @@
+node_modules
+.next
+lib/schema.d.ts
+package-lock.json
